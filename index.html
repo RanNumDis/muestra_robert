@@ -208,7 +208,7 @@
             transition: color 0.3s ease;
         }
         .nav-links a:hover {
-            color: #1a85ff; /* Azul Brillante */
+            color: #1a85ff;
         }
 
         .menu-toggle {
@@ -217,7 +217,7 @@
             cursor: pointer;
             background: none;
             border: none;
-            color: #0a2a5e; /* Azul Marino */
+            color: #0a2a5e;
             padding: 5px;
             z-index: 1001;
             position: relative;
@@ -226,7 +226,7 @@
 
         /* ===== HERO ===== */
         .hero {
-            background: linear-gradient(rgba(10, 42, 94, 0.8), rgba(10, 42, 94, 0.8)), url('hero.png');
+            background: linear-gradient(rgba(10, 42, 94, 0.8), rgba(10, 42, 94, 0.8)), url('llaves_robert.webp');
             background-size: cover;
             background-position: center;
             color: white;
@@ -267,7 +267,7 @@
             transition: color 0.3s ease, transform 0.3s ease;
         }
         .hero-social a:hover {
-            color: #f5b700; /* Amarillo */
+            color: #f5b700;
             transform: scale(1.1);
         }
 
@@ -283,7 +283,7 @@
         }
         .section-title h2 {
             font-size: 2.2rem;
-            color: #0a2a5e; /* Azul Marino */
+            color: #0a2a5e;
         }
         .section-title p {
             color: #7f8c8d;
@@ -293,7 +293,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
 
@@ -315,7 +315,7 @@
 
         .service-icon {
             font-size: 2.5rem;
-            color: #1a85ff; /* Azul Brillante */
+            color: #1a85ff;
             margin-bottom: 20px;
         }
 
@@ -332,7 +332,6 @@
             align-self: center;
         }
 
-        /* Etiqueta NUEVO: Amarillo */
         .new-badge {
             position: absolute;
             top: 12px;
@@ -349,7 +348,6 @@
             z-index: 2;
         }
 
-        /* Servicio Automotor (Nuevo) */
         .service-card.new-service .service-icon {
             color: #1a85ff;
         }
@@ -369,8 +367,7 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
-            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
 
@@ -408,12 +405,14 @@
         .product-card h3 {
             padding: 20px 20px 0;
             margin-bottom: 10px;
+            font-size: 1.2rem;
         }
 
         .product-card p {
             padding: 0 20px 20px;
             color: #7f8c8d;
             margin-bottom: 0;
+            font-size: 0.95rem;
         }
 
         /* ===== RESEÑAS ===== */
@@ -661,6 +660,13 @@
             color: #7f8c8d;
             font-size: 1.1rem;
         }
+        .rating-text a {
+            color: #1a85ff;
+            text-decoration: underline;
+        }
+        .rating-text a:hover {
+            color: #0a2a5e;
+        }
 
         /* ===== UBICACIÓN ===== */
         .location {
@@ -723,7 +729,7 @@
 
         /* ===== FOOTER ===== */
         footer {
-            background-color: #0a2a5e; /* Azul Marino */
+            background-color: #0a2a5e;
             color: white;
             padding: 60px 0 30px;
         }
@@ -749,7 +755,7 @@
             bottom: 0;
             width: 40px;
             height: 3px;
-            background-color: #f5b700; /* Amarillo */
+            background-color: #f5b700;
         }
 
         .footer-links {
@@ -759,7 +765,7 @@
             margin-bottom: 10px;
         }
         .footer-links a:hover {
-            color: #f5b700; /* Amarillo */
+            color: #f5b700;
         }
 
         .copyright {
@@ -810,7 +816,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(10, 42, 94, 0.7); /* Azul Marino con transparencia */
+            background-color: rgba(10, 42, 94, 0.7);
             z-index: 2000;
             justify-content: center;
             align-items: center;
@@ -1176,65 +1182,53 @@
             </div>
 
             <div class="services-grid">
-                <!-- Express y Urgencias -->
+                <!-- Cerrajería integral -->
                 <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
-                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-house-lock"></i>
                     </div>
-                    <h3 itemprop="name">Cerrajería Express y Urgencias</h3>
-                    <p itemprop="description">Copia de llaves en el acto. Apertura de puertas y solución de emergencias de cerrajería a domicilio en Rosario.</p>
-                    <meta itemprop="serviceType" content="Copia de llaves y urgencias" />
+                    <h3 itemprop="name">Cerrajería integral</h3>
+                    <p itemprop="description">Residencial, comercial y de seguridad.</p>
+                    <meta itemprop="serviceType" content="Cerrajería integral" />
                     <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
                         <i class="fab fa-whatsapp"></i> Contactar
                     </a>
                 </div>
 
-                <!-- Service a domicilio -->
+                <!-- Servicio técnico rápido -->
                 <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
-                        <i class="fas fa-screwdriver-wrench"></i>
+                        <i class="fas fa-truck-fast"></i>
                     </div>
-                    <h3 itemprop="name">Service a domicilio</h3>
-                    <p itemprop="description">Colocación de cerraduras, cambio de combinación y service de puertas blindadas.</p>
-                    <meta itemprop="serviceType" content="Service a domicilio" />
+                    <h3 itemprop="name">Servicio técnico rápido</h3>
+                    <p itemprop="description">Hacemos trabajos en todo Rosario.</p>
+                    <meta itemprop="serviceType" content="Servicio técnico rápido" />
                     <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
                         <i class="fab fa-whatsapp"></i> Contactar
                     </a>
                 </div>
 
-                <!-- Cerraduras inteligentes -->
+                <!-- Trabajos en el acto -->
                 <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
-                        <i class="fas fa-shield"></i>
+                        <i class="fas fa-key"></i>
                     </div>
-                    <h3 itemprop="name">Cerraduras inteligentes</h3>
-                    <p itemprop="description">Colocación de cerraduras inteligentes.</p>
-                    <meta itemprop="serviceType" content="Cerraduras inteligentes" />
+                    <h3 itemprop="name">Trabajos en el acto</h3>
+                    <p itemprop="description">Cambio de combinaciones y llaves.</p>
+                    <meta itemprop="serviceType" content="Trabajos en el acto" />
                     <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
                         <i class="fab fa-whatsapp"></i> Contactar
                     </a>
                 </div>
 
-                <!-- Cajas de Seguridad -->
+                <!-- Urgencias -->
                 <div class="service-card" itemscope itemtype="https://schema.org/Service">
                     <div class="service-icon">
-                        <i class="fas fa-vault"></i>
+                        <i class="fas fa-triangle-exclamation"></i>
                     </div>
-                    <h3 itemprop="name">Cajas de Seguridad</h3>
-                    <p itemprop="description">Especialistas en <strong>cajas fuertes</strong>: aperturas, cambio de combinación, búsqueda de clave y discos con retardo.</p>
-                    <meta itemprop="serviceType" content="Caja fuerte" />
-                    <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Contactar
-                    </a>
-                </div>
-
-                <!-- Consorcios -->
-                <div class="service-card" itemscope itemtype="https://schema.org/Service">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3 itemprop="name">Cerrajería para Consorcios</h3>
-                    <p itemprop="description">Servicio integral de cerrajería para consorcios y edificios en Rosario.</p>
+                    <h3 itemprop="name">Urgencias</h3>
+                    <p itemprop="description">Atendemos emergencias en la ciudad de Rosario.</p>
+                    <meta itemprop="serviceType" content="Urgencias" />
                     <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
                         <i class="fab fa-whatsapp"></i> Contactar
                     </a>
@@ -1252,12 +1246,39 @@
             </div>
 
             <div class="products-grid">
-                <!-- Tarjeta de producto destacado: reemplazar imagen y título -->
+                <!-- Producto 1 -->
                 <article class="product-card">
                     <div class="product-image">
-                        <img src="producto-destacado.webp" alt="Producto destacado de Cerrajero Robert" />
+                        <img src="producto1.webp" alt="Pasador antipánico" />
                     </div>
-                    <h3>Título del producto</h3>
+                    <h3>Pasador antipánico</h3>
+                    <p>Descripción breve del producto destacado.</p>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="producto2.webp" alt="Cerradura electrónica inteligente" />
+                    </div>
+                    <h3>Cerradura electrónica inteligente</h3>
+                    <p>Descripción breve del producto destacado.</p>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="producto3.webp" alt="Kit de alarma inalámbrica" />
+                    </div>
+                    <h3>Kit de alarma inalámbrica</h3>
+                    <p>Descripción breve del producto destacado.</p>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="producto4.webp" alt="Cámaras de vigilancia" />
+                    </div>
+                    <h3>Cámaras de vigilancia</h3>
                     <p>Descripción breve del producto destacado.</p>
                 </article>
             </div>
@@ -1273,15 +1294,15 @@
             </div>
 
             <div class="overall-rating">
-                <div class="rating-score">4.5/5</div>
+                <div class="rating-score">4.9/5</div>
                 <div class="rating-stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <div class="rating-text">Basado en 39 opiniones</div>
+                <div class="rating-text"><a href="https://maps.app.goo.gl/ZudF6EKnyuPHzVDD7" target="_blank">Basado en reseñas de Google</a></div>
             </div>
 
             <div class="reviews-carousel-container" id="reviewsCarouselContainer">
@@ -1295,18 +1316,18 @@
                         <div class="review-header">
                             <div class="review-avatar"><i class="fas fa-user"></i></div>
                             <div class="review-info">
-                                <h4>Noelia Gonzalez</h4>
-                                <p>Cliente desde 2022</p>
+                                <h4>Francisco Spinelli</h4>
+                                <p>Hace 10 meses</p>
                             </div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <div class="review-text-container">
-                            <p class="review-text">"Hace años que hago mis llaves ahí. Siempre la atención y los precios fueron excelentes. Hace poco tuve una urgencia, ya que trabe una cerradura y me lo solucionaron en tiempo y forma, incluso a menos valor del que esperaba. Recomiendo sin dudas."</p>
+                            <p class="review-text">"Excelente atención muy buen precio , para recomendar"</p>
                             <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
                         </div>
-                        <div class="review-date">Hace 4 años</div>
+                        <div class="review-date">Hace 10 meses</div>
                     </div>
 
                     <!-- Reseña 2 -->
@@ -1314,18 +1335,18 @@
                         <div class="review-header">
                             <div class="review-avatar"><i class="fas fa-user"></i></div>
                             <div class="review-info">
-                                <h4>Adriana Cecilia Mosca Duga</h4>
-                                <p>Cliente desde 2024</p>
+                                <h4>Liliana Rey</h4>
+                                <p>Hace 10 meses</p>
                             </div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <div class="review-text-container">
-                            <p class="review-text">"Muy buena atención, precios y profesionalismo. Dan un horario y lo cumplen. Trabajan con dedicación y cumplen. Los precios correctos y accesibles. Vivo a casi 15 cuadras, pero los prefiero a los de mi zona. Recomendables."</p>
+                            <p class="review-text">"Muy buena atención"</p>
                             <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
                         </div>
-                        <div class="review-date">Hace 2 años</div>
+                        <div class="review-date">Hace 10 meses</div>
                     </div>
 
                     <!-- Reseña 3 -->
@@ -1333,18 +1354,18 @@
                         <div class="review-header">
                             <div class="review-avatar"><i class="fas fa-user"></i></div>
                             <div class="review-info">
-                                <h4>Ana Fernández Lamothe</h4>
-                                <p>Cliente desde 2025</p>
+                                <h4>Billi Larrondo</h4>
+                                <p>Hace 10 meses</p>
                             </div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <div class="review-text-container">
-                            <p class="review-text">"Excelente cerrajeria. Los trabajadores tienen mucho conocimiento y me pudieron ayudar con un candado de principios de siglo 20 qué necesita la llave."</p>
+                            <p class="review-text">"Muy buena presencia y atención. Conforme con el trabajo y precio.Recomendable."</p>
                             <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
                         </div>
-                        <div class="review-date">Hace un año</div>
+                        <div class="review-date">Hace 10 meses</div>
                     </div>
 
                     <!-- Reseña 4 -->
@@ -1352,18 +1373,18 @@
                         <div class="review-header">
                             <div class="review-avatar"><i class="fas fa-user"></i></div>
                             <div class="review-info">
-                                <h4>Héctor Eduardo Ríos</h4>
-                                <p>Cliente desde 2024</p>
+                                <h4>Lionel Palais</h4>
+                                <p>Hace 10 meses</p>
                             </div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <div class="review-text-container">
-                            <p class="review-text">"Cerrajeros de varias generaciones."</p>
+                            <p class="review-text">"excelente trato muy buenos productos le agradezco cuando me armo la pc buen asesoramiento"</p>
                             <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
                         </div>
-                        <div class="review-date">Hace 2 años</div>
+                        <div class="review-date">Hace 10 meses</div>
                     </div>
 
                     <!-- Reseña 5 -->
@@ -1371,18 +1392,18 @@
                         <div class="review-header">
                             <div class="review-avatar"><i class="fas fa-user"></i></div>
                             <div class="review-info">
-                                <h4>Mauri Garcia</h4>
-                                <p>Cliente desde 2023</p>
+                                <h4>Daniela Martinelli</h4>
+                                <p>Hace 9 meses</p>
                             </div>
                         </div>
                         <div class="review-stars">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <div class="review-text-container">
-                            <p class="review-text">"Me solucionaron un problema con una cerradura rapidísimo!"</p>
+                            <p class="review-text">"Muy buen precio y responsabilidad, muy conforme!!"</p>
                             <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
                         </div>
-                        <div class="review-date">Hace 3 años</div>
+                        <div class="review-date">Hace 9 meses</div>
                     </div>
 
                     <!-- Reseña 6 -->
@@ -1390,18 +1411,18 @@
                         <div class="review-header">
                             <div class="review-avatar"><i class="fas fa-user"></i></div>
                             <div class="review-info">
-                                <h4>Gustavo Lamanuzzi</h4>
-                                <p>Cliente desde 2022</p>
+                                <h4>Viviana Zacchino</h4>
+                                <p>Hace 10 meses</p>
                             </div>
                         </div>
                         <div class="review-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-alt"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <div class="review-text-container">
-                            <p class="review-text">"Excelente atención en tiempo y forma muy prolijo la persona que fue a solucionar el problema."</p>
+                            <p class="review-text">"Excelente Roberto ! Muy buen trabajo y muy amable."</p>
                             <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
                         </div>
-                        <div class="review-date">Hace 4 años</div>
+                        <div class="review-date">Hace 10 meses</div>
                     </div>
                 </div>
 
@@ -1509,12 +1530,9 @@
                 <div class="footer-column">
                     <h3>Servicios</h3>
                     <ul class="footer-links">
-                        <li><a href="#servicios">Cerrajería express</a></li>
-                        <li><a href="#servicios">Service a domicilio</a></li>
-                        <li><a href="#servicios">Cerraduras inteligentes</a></li>
-                        <li><a href="#servicios">Cajas de seguridad</a></li>
-                        <li><a href="#servicios">Consorcios</a></li>
-                        <li><a href="#servicios">Cerrajería automotor</a></li>
+                        <li><a href="#servicios">Cerrajería integral</a></li>
+                        <li><a href="#servicios">Servicio técnico rápido</a></li>
+                        <li><a href="#servicios">Trabajos en el acto</a></li>
                         <li><a href="#servicios">Urgencias</a></li>
                     </ul>
                 </div>
