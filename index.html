@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cerrajero Robert - Rosario</title>
+
+    <meta name="description" content="Cerrajero Robert en Rosario. Servicio de cerrajería, copia de llaves, cerraduras, urgencias y atención a domicilio en Rosario." />
+    <meta name="keywords" content="cerrajero rosario, cerrajero robert, cerrajería rosario, copia de llaves, apertura de puertas, urgencias cerrajería, cerraduras inteligentes" />
+    <link rel="canonical" href="https://www.cerrajerorobert.com.ar" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://www.cerrajerorobert.com.ar"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Servicios de Cerrajería",
+                "item": "https://www.cerrajerorobert.com.ar#servicios"
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Productos destacados",
+                "item": "https://www.cerrajerorobert.com.ar#productos"
+            }, {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contacto Cerrajero Robert",
+                "item": "https://www.cerrajerorobert.com.ar#ubicacion"
+            }]
+        }
+    </script>
+
+    <style>
+        /* ===== RESET Y GENERAL ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: #0a2a5e; /* Azul Marino del logo */
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Botón Primario: Azul Brillante */
+        .btn-primary {
+            background-color: #1a85ff;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #0a2a5e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Botón Secundario: Azul Marino */
+        .btn-secondary {
+            background-color: #0a2a5e;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #1a85ff;
+            transform: translateY(-2px);
+        }
+
+        /* Botón de Emergencia: ROJO */
+        .btn-emergency {
+            background-color: #e74c3c;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        .btn-whatsapp {
+            background-color: #38a169;
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background-color: #2d8a5e;
+        }
+
+        /* Botón de contacto en tarjetas: Azul Brillante */
+        .btn-contact {
+            background-color: #1a85ff;
+            color: white;
+            padding: 8px 18px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            align-self: center;
+        }
+        .btn-contact:hover {
+            background-color: #0a2a5e;
+            transform: translateY(-2px);
+        }
+        .btn-contact i {
+            margin-right: 6px;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+            }
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            height: 80px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            position: relative;
+            height: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            z-index: 1001;
+            height: 100%;
+            max-width: 400px;
+        }
+
+        .logo-image {
+            max-height: 100%;
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #1a85ff; /* Azul Brillante */
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #0a2a5e; /* Azul Marino */
+            padding: 5px;
+            z-index: 1001;
+            position: relative;
+            right: 0;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(rgba(10, 42, 94, 0.8), rgba(10, 42, 94, 0.8)), url('llaves_robert.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 0 50px;
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-logo {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            font-size: 1.8rem;
+        }
+        .hero-social a {
+            color: white;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .hero-social a:hover {
+            color: #f5b700; /* Amarillo */
+            transform: scale(1.1);
+        }
+
+        /* ===== SERVICIOS ===== */
+        .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: #0a2a5e; /* Azul Marino */
+        }
+        .section-title p {
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: #1a85ff; /* Azul Brillante */
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            flex-grow: 1;
+        }
+
+        .service-card .btn-contact {
+            align-self: center;
+        }
+
+        /* Etiqueta NUEVO: Amarillo */
+        .new-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: #f5b700;
+            color: #0a2a5e;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 6px rgba(245, 183, 0, 0.3);
+            z-index: 2;
+        }
+
+        /* Servicio Automotor (Nuevo) */
+        .service-card.new-service .service-icon {
+            color: #1a85ff;
+        }
+
+        .service-card.new-service .btn-contact {
+            background-color: #0a2a5e;
+        }
+        .service-card.new-service .btn-contact:hover {
+            background-color: #1a85ff;
+        }
+
+        /* ===== PRODUCTOS DESTACADOS ===== */
+        .products {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-card h3 {
+            padding: 20px 20px 0;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            padding: 0 20px 20px;
+            color: #7f8c8d;
+            margin-bottom: 0;
+        }
+
+        /* ===== RESEÑAS ===== */
+        .reviews {
+            padding: 80px 0;
+            background-color: white;
+            position: relative;
+        }
+
+        .reviews-carousel-container {
+            position: relative;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0 80px;
+            touch-action: pan-y pinch-zoom;
+        }
+
+        .reviews-carousel {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .review-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            min-width: 350px;
+            flex: 0 0 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            transition: all 0.5s ease;
+            position: relative;
+            z-index: 1;
+            height: 320px;
+            overflow: hidden;
+            opacity: 1;
+            filter: none;
+            transform: scale(1);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .review-card:not(.active) {
+            opacity: 0.6;
+            filter: blur(2px);
+            transform: scale(0.9);
+        }
+
+        .review-card.active {
+            opacity: 1;
+            filter: none;
+            transform: scale(1);
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            color: #1a85ff;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .review-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .review-info h4 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        .review-info p {
+            color: #7f8c8d;
+            margin-bottom: 0;
+            font-size: 0.85rem;
+        }
+
+        .review-stars {
+            color: #FFD700;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .review-text-container {
+            position: relative;
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding-right: 5px;
+            max-height: 150px;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y;
+        }
+        .review-text-container::-webkit-scrollbar {
+            width: 4px;
+        }
+        .review-text-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 2px;
+        }
+        .review-text-container::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 2px;
+        }
+        .review-text-container::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: linear-gradient(to bottom, transparent, white);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        .scroll-indicator i {
+            color: #1a85ff;
+            font-size: 0.8rem;
+            margin-bottom: 2px;
+        }
+
+        .review-text {
+            font-style: italic;
+            line-height: 1.6;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .review-date {
+            font-size: 0.8rem;
+            color: #95a5a6;
+            text-align: right;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #0a2a5e;
+            cursor: pointer;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            z-index: 10;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+        }
+        .carousel-btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-50%) scale(1.05);
+        }
+        .carousel-btn:active {
+            background-color: #1a85ff;
+            color: white;
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 5px 20px rgba(26, 133, 255, 0.3);
+        }
+        .carousel-btn.prev {
+            left: 10px;
+        }
+        .carousel-btn.next {
+            right: 10px;
+        }
+
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .indicator.active {
+            background-color: #1a85ff;
+            transform: scale(1.3);
+        }
+
+        .overall-rating {
+            text-align: center;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rating-score {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #0a2a5e;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .rating-stars {
+            color: #FFD700;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .rating-text {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        /* ===== UBICACIÓN ===== */
+        .location {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .location-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .location-info {
+            padding: 20px;
+        }
+        .location-info h3 {
+            margin-bottom: 20px;
+            color: #0a2a5e;
+        }
+
+        .location-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #e2e8f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            color: #1a85ff;
+            flex-shrink: 0;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #0a2a5e; /* Azul Marino */
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            color: white;
+        }
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: #f5b700; /* Amarillo */
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        .footer-links a:hover {
+            color: #f5b700; /* Amarillo */
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+
+        /* ===== BOTONES FLOTANTES ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            background-color: #1da851;
+            transform: scale(1.1);
+        }
+
+        .emergency-button {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            z-index: 999;
+            padding: 14px 28px;
+            font-size: 1rem;
+        }
+
+        /* ===== MODALES ===== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 42, 94, 0.7); /* Azul Marino con transparencia */
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #7f8c8d;
+        }
+        .modal-close:hover {
+            color: #1a85ff;
+        }
+
+        .confirmation-modal {
+            display: none;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1200px) {
+            .review-card {
+                min-width: 320px;
+                flex: 0 0 320px;
+            }
+            .reviews-carousel-container {
+                padding: 0 70px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .location-container {
+                grid-template-columns: 1fr;
+            }
+            .location-info {
+                order: 2;
+            }
+            .map-container {
+                order: 1;
+            }
+            .review-card {
+                min-width: 300px;
+                flex: 0 0 300px;
+                height: 300px;
+            }
+            .reviews-carousel-container {
+                padding: 0 60px;
+            }
+            .carousel-btn.prev {
+                left: 5px;
+            }
+            .carousel-btn.next {
+                right: 5px;
+            }
+            .rating-score {
+                font-size: 3rem;
+            }
+            .rating-stars {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 10px 15px;
+            }
+            header {
+                height: 70px;
+            }
+            .logo {
+                max-width: 300px;
+            }
+            .logo-image {
+                max-height: 100%;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links li {
+                margin: 10px 0;
+                margin-left: 0;
+            }
+
+            .menu-toggle {
+                display: block;
+                position: static;
+                margin-left: auto;
+                order: 2;
+            }
+            .logo {
+                order: 1;
+                flex: 1;
+                max-width: calc(100% - 60px);
+            }
+            .header-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            .hero {
+                padding: 105px 0 80px;
+                margin-top: 70px;
+            }
+
+            .hero-logo {
+                max-width: 220px;
+            }
+
+            .map-container {
+                height: 350px;
+            }
+
+            .emergency-button {
+                position: fixed;
+                top: auto;
+                bottom: 90px;
+                right: 20px;
+                left: auto;
+                padding: 10px 16px;
+                font-size: 0.9rem;
+                z-index: 999;
+                margin: 0;
+                display: block;
+                width: auto;
+                animation: pulse 2s infinite;
+                box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+            }
+
+            @media (max-height: 600px) {
+                .emergency-button {
+                    bottom: 80px;
+                }
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+
+            .review-card {
+                min-width: 280px;
+                flex: 0 0 280px;
+                height: 280px;
+                padding: 20px;
+            }
+            .review-text-container {
+                max-height: 130px;
+            }
+            .review-avatar {
+                width: 45px;
+                height: 45px;
+                font-size: 1.3rem;
+            }
+            .review-info h4 {
+                font-size: 1rem;
+            }
+            .carousel-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 1rem;
+            }
+            .reviews-carousel-container {
+                padding: 0 50px;
+            }
+            .rating-score {
+                font-size: 2.8rem;
+            }
+            .rating-stars {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 60px;
+            }
+            .header-container {
+                padding: 8px 12px;
+            }
+            .hero {
+                margin-top: 60px;
+                padding: 90px 0 60px;
+            }
+            .hero-logo {
+                max-width: 180px;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            .btn {
+                padding: 10px 20px;
+            }
+            .map-container {
+                height: 300px;
+            }
+            .logo {
+                max-width: 250px;
+            }
+            .logo-image {
+                max-height: 100%;
+            }
+            .emergency-button {
+                bottom: 100px;
+                right: 15px;
+                padding: 12px 21px;
+                font-size: 0.8rem;
+            }
+            .whatsapp-float {
+                bottom: 30px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem;
+            }
+            .contact-item {
+                align-items: flex-start;
+            }
+            .contact-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+            @media (max-height: 600px) {
+                .emergency-button {
+                    bottom: 70px;
+                }
+                .whatsapp-float {
+                    bottom: 15px;
+                }
+            }
+            .review-card {
+                min-width: 260px;
+                flex: 0 0 260px;
+                height: 260px;
+                padding: 18px;
+            }
+            .review-text-container {
+                max-height: 110px;
+            }
+            .review-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .review-avatar {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .review-text {
+                font-size: 0.9rem;
+            }
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+            .carousel-btn.prev {
+                left: 0;
+            }
+            .carousel-btn.next {
+                right: 0;
+            }
+            .reviews-carousel-container {
+                padding: 0 40px;
+            }
+            .rating-score {
+                font-size: 2.5rem;
+            }
+            .rating-stars {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="isologo_horizontal.png" alt="Cerrajero Robert" class="logo-image" />
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#reseñas">Reseñas</a></li>
+                    <li><a href="#ubicacion">Ubicación y contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <meta itemprop="name" content="Cerrajero Robert" />
+        <meta itemprop="telephone" content="+5493416200426" />
+        <meta itemprop="address" content="Rosario, Santa Fe, Argentina" />
+    </header>
+
+    <!-- BOTÓN DE EMERGENCIA -->
+    <a href="#emergencyModal" class="btn btn-emergency emergency-button" id="emergencyBtn" aria-label="Servicio de emergencias de cerrajería en Rosario">
+        <i class="fas fa-phone-alt"></i> URGENCIAS
+    </a>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <img src="isologo.png" alt="Cerrajero Robert" class="hero-logo" />
+            <p>Cerrajero Robert en Rosario. Servicio de cerrajería, copia de llaves y atención de urgencias.</p>
+            <a href="https://wa.me/5493416200426" class="btn btn-whatsapp" target="_blank" aria-label="Contactar a Cerrajero Robert por WhatsApp">
+                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+            <div class="hero-social">
+                <a href="https://www.instagram.com/buscocerrajerorobert/" target="_blank" aria-label="Instagram de Cerrajero Robert">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros servicios</h2>
+                <p>Ofrecemos soluciones de cerrajería rápidas y efectivas para hogares y consorcios.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Express y Urgencias -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 itemprop="name">Cerrajería Express y Urgencias</h3>
+                    <p itemprop="description">Copia de llaves en el acto. Apertura de puertas y solución de emergencias de cerrajería a domicilio en Rosario.</p>
+                    <meta itemprop="serviceType" content="Copia de llaves y urgencias" />
+                    <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
+                </div>
+
+                <!-- Service a domicilio -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 itemprop="name">Service a domicilio</h3>
+                    <p itemprop="description">Colocación de cerraduras, cambio de combinación y service de puertas blindadas.</p>
+                    <meta itemprop="serviceType" content="Service a domicilio" />
+                    <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
+                </div>
+
+                <!-- Cerraduras inteligentes -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-shield"></i>
+                    </div>
+                    <h3 itemprop="name">Cerraduras inteligentes</h3>
+                    <p itemprop="description">Colocación de cerraduras inteligentes.</p>
+                    <meta itemprop="serviceType" content="Cerraduras inteligentes" />
+                    <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
+                </div>
+
+                <!-- Cajas de Seguridad -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-vault"></i>
+                    </div>
+                    <h3 itemprop="name">Cajas de Seguridad</h3>
+                    <p itemprop="description">Especialistas en <strong>cajas fuertes</strong>: aperturas, cambio de combinación, búsqueda de clave y discos con retardo.</p>
+                    <meta itemprop="serviceType" content="Caja fuerte" />
+                    <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
+                </div>
+
+                <!-- Consorcios -->
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 itemprop="name">Cerrajería para Consorcios</h3>
+                    <p itemprop="description">Servicio integral de cerrajería para consorcios y edificios en Rosario.</p>
+                    <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
+                </div>
+
+                <!-- Cerrajería automotor -->
+                <div class="service-card new-service" itemscope itemtype="https://schema.org/Service">
+                    <span class="new-badge">Nuevo</span>
+
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 itemprop="name">Cerrajería automotor</h3>
+                    <p itemprop="description">Copia de llaves codificadas. Cambio de pilas, carcaza y telemando. Codificado y clonado.</p>
+                    <a href="https://wa.me/5493416200426" class="btn btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Productos destacados</h2>
+                <p>Conocé algunos de nuestros productos destacados.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Tarjeta de producto destacado: reemplazar imagen y título -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="producto-destacado.webp" alt="Producto destacado de Cerrajero Robert" />
+                    </div>
+                    <h3>Título del producto</h3>
+                    <p>Descripción breve del producto destacado.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="reviews" id="reseñas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Opiniones de nuestros clientes</h2>
+                <p>¿Qué dicen quienes ya confiaron en nuestros servicios?</p>
+            </div>
+
+            <div class="overall-rating">
+                <div class="rating-score">4.5/5</div>
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="rating-text">Basado en 39 opiniones</div>
+            </div>
+
+            <div class="reviews-carousel-container" id="reviewsCarouselContainer">
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Reseña anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="reviews-carousel" id="reviewsCarousel">
+                    <!-- Reseña 1 -->
+                    <div class="review-card" data-index="0">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Noelia Gonzalez</h4>
+                                <p>Cliente desde 2022</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-text-container">
+                            <p class="review-text">"Hace años que hago mis llaves ahí. Siempre la atención y los precios fueron excelentes. Hace poco tuve una urgencia, ya que trabe una cerradura y me lo solucionaron en tiempo y forma, incluso a menos valor del que esperaba. Recomiendo sin dudas."</p>
+                            <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="review-date">Hace 4 años</div>
+                    </div>
+
+                    <!-- Reseña 2 -->
+                    <div class="review-card active" data-index="1">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Adriana Cecilia Mosca Duga</h4>
+                                <p>Cliente desde 2024</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-text-container">
+                            <p class="review-text">"Muy buena atención, precios y profesionalismo. Dan un horario y lo cumplen. Trabajan con dedicación y cumplen. Los precios correctos y accesibles. Vivo a casi 15 cuadras, pero los prefiero a los de mi zona. Recomendables."</p>
+                            <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="review-date">Hace 2 años</div>
+                    </div>
+
+                    <!-- Reseña 3 -->
+                    <div class="review-card" data-index="2">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Ana Fernández Lamothe</h4>
+                                <p>Cliente desde 2025</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-text-container">
+                            <p class="review-text">"Excelente cerrajeria. Los trabajadores tienen mucho conocimiento y me pudieron ayudar con un candado de principios de siglo 20 qué necesita la llave."</p>
+                            <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="review-date">Hace un año</div>
+                    </div>
+
+                    <!-- Reseña 4 -->
+                    <div class="review-card" data-index="3">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Héctor Eduardo Ríos</h4>
+                                <p>Cliente desde 2024</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-text-container">
+                            <p class="review-text">"Cerrajeros de varias generaciones."</p>
+                            <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="review-date">Hace 2 años</div>
+                    </div>
+
+                    <!-- Reseña 5 -->
+                    <div class="review-card" data-index="4">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Mauri Garcia</h4>
+                                <p>Cliente desde 2023</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-text-container">
+                            <p class="review-text">"Me solucionaron un problema con una cerradura rapidísimo!"</p>
+                            <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="review-date">Hace 3 años</div>
+                    </div>
+
+                    <!-- Reseña 6 -->
+                    <div class="review-card" data-index="5">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Gustavo Lamanuzzi</h4>
+                                <p>Cliente desde 2022</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-alt"></i>
+                        </div>
+                        <div class="review-text-container">
+                            <p class="review-text">"Excelente atención en tiempo y forma muy prolijo la persona que fue a solucionar el problema."</p>
+                            <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="review-date">Hace 4 años</div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente reseña">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y CONTACTO -->
+    <section class="location" id="ubicacion">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ubicación y contacto</h2>
+                <p>Atendemos en Rosario y alrededores.</p>
+            </div>
+
+            <div class="location-container">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps?q=Rosario,Santa+Fe,Argentina&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Cerrajero Robert en Rosario"></iframe>
+                </div>
+
+                <div class="location-info">
+                    <h3>Zona de atención</h3>
+
+                    <div class="location-details">
+                        <p>Atendemos en Rosario y alrededores.</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+5493416200426">+54 (0341) 156200426</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p><a href="https://www.instagram.com/buscocerrajerorobert/" target="_blank">@buscocerrajerorobert</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Consultar disponibilidad por WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Zona de cobertura</h4>
+                            <p>Rosario, Santa Fe</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5493416200426" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>CERRAJERO ROBERT ROSARIO</h3>
+                    <p>Servicios profesionales de <strong>cerrajería en Rosario</strong>.</p>
+
+                    <div style="margin-top: 20px; display: flex; gap: 10px;">
+                        <a href="https://www.instagram.com/buscocerrajerorobert/" target="_blank" aria-label="Instagram de Cerrajero Robert" style="color: #e4405f; font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <a href="https://wa.me/5493416200426" class="btn btn-whatsapp" style="padding: 8px 15px; font-size: 0.9rem;">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#reseñas">Reseñas</a></li>
+                        <li><a href="#ubicacion">Ubicación y contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Cerrajería express</a></li>
+                        <li><a href="#servicios">Service a domicilio</a></li>
+                        <li><a href="#servicios">Cerraduras inteligentes</a></li>
+                        <li><a href="#servicios">Cajas de seguridad</a></li>
+                        <li><a href="#servicios">Consorcios</a></li>
+                        <li><a href="#servicios">Cerrajería automotor</a></li>
+                        <li><a href="#servicios">Urgencias</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:+5493416200426">+54 (0341) 156200426</a></li>
+                        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/buscocerrajerorobert/" target="_blank">@buscocerrajerorobert</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rosario, Santa Fe</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Cerrajero Robert. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/5493416200426" class="whatsapp-float" target="_blank" aria-label="WhatsApp de Cerrajero Robert">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- MODAL EMERGENCIA -->
+    <div class="modal-overlay" id="emergencyModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h2>¿Necesitas ayuda de inmediato?</h2>
+            <p>Para emergencias, contactanos directamente.</p>
+
+            <div style="margin: 30px 0;">
+                <a href="tel:+5493416200426" class="btn btn-emergency" style="margin-bottom: 15px; display: block;">
+                    <i class="fas fa-phone-alt"></i> LLAMAR AHORA: +54 (0341) 156200426
+                </a>
+                <a href="https://wa.me/5493416200426" class="btn btn-whatsapp" style="display: block;" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp de EMERGENCIA
+                </a>
+            </div>
+
+            <p><small>Atendemos emergencias en Rosario.</small></p>
+        </div>
+    </div>
+
+    <!-- MODAL CONFIRMACIÓN -->
+    <div class="modal-overlay confirmation-modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="modal-close" id="confirmationClose">&times;</span>
+            <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 4rem; color: #25D366; margin-bottom: 20px;">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>¡Solicitud Enviada!</h2>
+                <p>Hemos recibido tu solicitud de servicio. Nos contactaremos contigo en los próximos minutos para coordinar la atención.</p>
+                <p>Para emergencias inmediatas, puedes contactarnos directamente:</p>
+                <a href="tel:+5493416200426" class="btn btn-emergency" style="margin-top: 20px;">
+                    <i class="fas fa-phone-alt"></i> LLAMAR AHORA
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ===== MENÚ HAMBURGUESA =====
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+                const icon = document.querySelector('.menu-toggle i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // ===== CARRUSEL DE RESEÑAS =====
+        (function initCarousel() {
+            const carousel = document.getElementById('reviewsCarousel');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const indicatorsContainer = document.getElementById('carouselIndicators');
+            const reviewCards = document.querySelectorAll('.review-card');
+            const carouselContainer = document.getElementById('reviewsCarouselContainer');
+            const totalCards = reviewCards.length;
+            let currentIndex = 1;
+            let autoSlideInterval;
+            let isTransitioning = false;
+            let touchStartX = 0,
+                touchStartY = 0,
+                touchEndX = 0,
+                touchEndY = 0;
+            let isScrolling = false;
+            const swipeThreshold = 50;
+
+            function getDimensions() {
+                if (reviewCards.length === 0) return null;
+                const firstCard = reviewCards[0];
+                const container = document.querySelector('.reviews-carousel-container');
+                if (!firstCard || firstCard.offsetWidth === 0) {
+                    setTimeout(getDimensions, 100);
+                    return null;
+                }
+                return {
+                    cardWidth: firstCard.offsetWidth,
+                    cardMargin: 0,
+                    containerWidth: container ? container.offsetWidth : window.innerWidth,
+                    gap: 20
+                };
+            }
+
+            function calculateOffset() {
+                const dims = getDimensions();
+                if (!dims) return 0;
+                const slideWidth = dims.cardWidth + dims.gap;
+                if (currentIndex === 0) return 0;
+                if (currentIndex === totalCards - 1) {
+                    const totalWidth = (slideWidth * totalCards) - dims.gap;
+                    return Math.max(0, totalWidth - dims.containerWidth);
+                }
+                return (currentIndex * slideWidth) - (dims.containerWidth / 2) + (dims.cardWidth / 2);
+            }
+
+            function applyCarouselTransform() {
+                if (isTransitioning || !reviewCards[currentIndex]) return;
+                let targetOffset = calculateOffset();
+                const dims = getDimensions();
+                if (!dims) return;
+                const slideWidth = dims.cardWidth + dims.gap;
+                const totalCarouselWidth = (slideWidth * totalCards) - dims.gap;
+                const maxOffset = Math.max(0, totalCarouselWidth - dims.containerWidth);
+                targetOffset = Math.max(0, Math.min(targetOffset, maxOffset));
+                carousel.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                carousel.style.transform = `translateX(-${targetOffset}px)`;
+                reviewCards.forEach((card, index) => {
+                    card.classList.toggle('active', index === currentIndex);
+                });
+                updateIndicators();
+                isTransitioning = true;
+                setTimeout(() => { isTransitioning = false; }, 500);
+            }
+
+            function updateIndicators() {
+                document.querySelectorAll('.indicator').forEach((ind, i) => {
+                    ind.classList.toggle('active', i === currentIndex);
+                });
+            }
+
+            function createIndicators() {
+                indicatorsContainer.innerHTML = '';
+                for (let i = 0; i < totalCards; i++) {
+                    const indicator = document.createElement('div');
+                    indicator.classList.add('indicator');
+                    if (i === currentIndex) indicator.classList.add('active');
+                    indicator.setAttribute('data-index', i);
+                    indicator.addEventListener('click', () => goToSlide(i));
+                    indicatorsContainer.appendChild(indicator);
+                }
+            }
+
+            function goToSlide(index) {
+                if (isTransitioning) return;
+                if (index < 0) index = totalCards - 1;
+                else if (index >= totalCards) index = 0;
+                currentIndex = index;
+                applyCarouselTransform();
+                resetAutoSlide();
+            }
+
+            function startAutoSlide() {
+                stopAutoSlide();
+                autoSlideInterval = setInterval(() => goToSlide(currentIndex + 1), 8000);
+            }
+
+            function stopAutoSlide() {
+                if (autoSlideInterval) { clearInterval(autoSlideInterval);
+                    autoSlideInterval = null; }
+            }
+
+            function resetAutoSlide() { stopAutoSlide();
+                startAutoSlide(); }
+
+            function handleTouchStart(e) {
+                if (e.target.closest('.carousel-btn')) return;
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                isScrolling = false;
+                stopAutoSlide();
+            }
+
+            function handleTouchMove(e) {
+                if (!touchStartX) return;
+                touchEndX = e.touches[0].clientX;
+                touchEndY = e.touches[0].clientY;
+                const deltaX = touchEndX - touchStartX;
+                const deltaY = touchEndY - touchStartY;
+                if (Math.abs(deltaY) > Math.abs(deltaX)) { isScrolling = true; return; }
+                e.preventDefault();
+                const dims = getDimensions();
+                if (!dims) return;
+                const currentOffset = calculateOffset();
+                const slideWidth = dims.cardWidth + dims.gap;
+                const dragOffset = deltaX / 2;
+                carousel.style.transition = 'none';
+                carousel.style.transform = `translateX(-${currentOffset - dragOffset}px)`;
+            }
+
+            function handleTouchEnd(e) {
+                if (!touchStartX || isScrolling) {
+                    touchStartX = 0;
+                    touchStartY = 0;
+                    setTimeout(startAutoSlide, 3000);
+                    return;
+                }
+                touchEndX = e.changedTouches[0].clientX;
+                touchEndY = e.changedTouches[0].clientY;
+                const deltaX = touchEndX - touchStartX;
+                const deltaY = touchEndY - touchStartY;
+                if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > swipeThreshold) {
+                    goToSlide(deltaX > 0 ? currentIndex - 1 : currentIndex + 1);
+                } else {
+                    applyCarouselTransform();
+                }
+                touchStartX = 0;
+                touchStartY = 0;
+                isScrolling = false;
+                setTimeout(startAutoSlide, 3000);
+            }
+
+            function init() {
+                createIndicators();
+                prevBtn.addEventListener('click', (e) => { e.preventDefault();
+                    e.stopPropagation();
+                    goToSlide(currentIndex - 1); });
+                nextBtn.addEventListener('click', (e) => { e.preventDefault();
+                    e.stopPropagation();
+                    goToSlide(currentIndex + 1); });
+                prevBtn.addEventListener('touchstart', (e) => e.stopPropagation());
+                nextBtn.addEventListener('touchstart', (e) => e.stopPropagation());
+                carouselContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+                carouselContainer.addEventListener('touchmove', handleTouchMove, { passive: false });
+                carouselContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
+                document.querySelectorAll('.review-text-container').forEach(container => {
+                    container.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: true });
+                    container.addEventListener('touchmove', (e) => e.stopPropagation(), { passive: true });
+                });
+                setTimeout(applyCarouselTransform, 100);
+                startAutoSlide();
+                carousel.addEventListener('mouseenter', stopAutoSlide);
+                carousel.addEventListener('mouseleave', startAutoSlide);
+                let resizeTimeout;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimeout);
+                    resizeTimeout = setTimeout(applyCarouselTransform, 250);
+                });
+                window.addEventListener('load', () => setTimeout(applyCarouselTransform, 300));
+            }
+
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+            else init();
+        })();
+
+        // ===== MODAL EMERGENCIA =====
+        document.getElementById('emergencyBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('emergencyModal').style.display = 'flex';
+        });
+        document.getElementById('modalClose').addEventListener('click', function() {
+            document.getElementById('emergencyModal').style.display = 'none';
+        });
+        document.getElementById('emergencyModal').addEventListener('click', function(e) {
+            if (e.target === this) document.getElementById('emergencyModal').style.display = 'none';
+        });
+
+        // ===== SCROLL SUAVE =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.id === 'emergencyBtn') return;
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ===== EFECTO SCROLL =====
+        function checkScroll() {
+            document.querySelectorAll('.service-card, .product-card, .map-container, .location-info, .review-card')
+                .forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight / 1.2) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+        }
+        document.querySelectorAll('.service-card, .product-card, .map-container, .location-info, .review-card')
+            .forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+
+        // ===== INDICADORES DE SCROLL EN RESEÑAS =====
+        function updateScrollIndicators() {
+            document.querySelectorAll('.review-text-container').forEach(container => {
+                const text = container.querySelector('.review-text');
+                const indicator = container.querySelector('.scroll-indicator');
+                if (!text || !indicator) return;
+                if (text.scrollHeight > container.clientHeight) {
+                    indicator.style.display = 'flex';
+                } else {
+                    indicator.style.display = 'none';
+                }
+                container.addEventListener('scroll', () => {
+                    const isAtBottom = container.scrollHeight - container.scrollTop <= container.clientHeight + 1;
+                    indicator.style.opacity = isAtBottom ? '0' : '0.7';
+                });
+            });
+        }
+        updateScrollIndicators();
+        window.addEventListener('resize', updateScrollIndicators);
+    </script>
+</body>
+</html>
